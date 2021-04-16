@@ -1,17 +1,17 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { render } from 'react-dom'
 import { createMuiTheme, ThemeProvider } from '@material-ui/core'
-import { BrowserRouter as Router, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import * as serviceWorker from './components/serviceWorker'
 import Sidebar from './components/sidebar'
 import { mapRoutes } from './functions';
 import routes from './routes';
-import logo from './static/logo.png'
 import { lightBlue } from '@material-ui/core/colors';
 import './css/style.css'
+import Home from './home';
 
-ReactDOM.render(
+render(
   <React.StrictMode>
     <ThemeProvider theme={createMuiTheme({
       status: {
@@ -19,19 +19,18 @@ ReactDOM.render(
       },
     })} >
       <Router>
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1>We're here to help!</h1>
-          <img src={logo} className="App-logo" alt="logo" />
-        </header>
+          <header className="App-header">
+            <h1>Welcome!</h1>
+          </header>
 
-        <Sidebar routes={routes}>
-          <Switch>{mapRoutes(routes)}</Switch>
-        </Sidebar>
+          <Sidebar routes={routes}>
+            <Switch>
+              {mapRoutes(routes)}
+              <Route path={'/'} render={props => <Home />} />
+            </Switch>
+          </Sidebar>
 
-        <footer className="App-header">
-
-        </footer>
+          <footer className="App-header"></footer>
       </Router>
     </ThemeProvider>
   </React.StrictMode>,

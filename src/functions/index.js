@@ -2,21 +2,26 @@ import React from 'react'
 import { Route } from "react-router-dom"
 import Markdown from '../components/Markdown'
 
-export function mapRoutes(r) {
-    return r.map((e, i) => (
-        <Route
-            path={e.route}
-            render={props => {
-                return (
-                    <div key={i} className='flex-1 flex-col' >
-                        {props?.match?.isExact ? <h1 className='content'>{e?.label}</h1> : null}
-                        <Markdown {...props} route={e} />
-                        {e?.children ? mapRoutes(e.children) : null}
-                    </div>
-                )
-            }}
-        />
-    )
+export function mapRoutes(r) {   
+
+    return r.map((e, i) => {
+
+        return (
+            <Route
+                path={e.route}
+                render={props => {
+                                        return (
+                        <div key={i} className='flex-1 flex-col' >
+                            {props?.match?.isExact ? <h1 className='content'>{e?.label}</h1> : null}
+                            <Markdown {...props} route={e} />
+                            {e?.children ? mapRoutes(e.children) : null}
+                        </div>
+                    )
+                    //}
+                }}
+            />
+        )
+    }
     )
 }
 
