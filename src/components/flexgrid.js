@@ -22,7 +22,7 @@ export const FlexGrid = ({ renderItem, data, cols = 3, noResize }) => {
 
                 console.log(noResize, window.innerWidth, col, numCols)
 
-        setNumCols(col == 0 ? 1 : col < 0 ? col * -1 : col)
+        setNumCols(col === 0 ? 1 : col < 0 ? col * -1 : col)
     }
 
     if (!numCols && typeof window !== 'undefined') { handleResize() }
