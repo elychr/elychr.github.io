@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/corebp.github.io/static/css/main.de5701c2.chunk.css",
-    "main.js": "/corebp.github.io/static/js/main.8b0f8503.chunk.js",
-    "main.js.map": "/corebp.github.io/static/js/main.8b0f8503.chunk.js.map",
-    "runtime-main.js": "/corebp.github.io/static/js/runtime-main.9b0d6c87.js",
-    "runtime-main.js.map": "/corebp.github.io/static/js/runtime-main.9b0d6c87.js.map",
-    "static/js/2.efd57410.chunk.js": "/corebp.github.io/static/js/2.efd57410.chunk.js",
-    "static/js/2.efd57410.chunk.js.map": "/corebp.github.io/static/js/2.efd57410.chunk.js.map",
-    "index.html": "/corebp.github.io/index.html",
-    "static/css/main.de5701c2.chunk.css.map": "/corebp.github.io/static/css/main.de5701c2.chunk.css.map",
-    "static/js/2.efd57410.chunk.js.LICENSE.txt": "/corebp.github.io/static/js/2.efd57410.chunk.js.LICENSE.txt",
-    "static/media/random.md": "/corebp.github.io/static/media/random.c0621414.md",
-    "static/media/zerossl.md": "/corebp.github.io/static/media/zerossl.1f20d59d.md"
+    "main.css": "/elychr.github.io/static/css/main.de5701c2.chunk.css",
+    "main.js": "/elychr.github.io/static/js/main.4c5d06e6.chunk.js",
+    "main.js.map": "/elychr.github.io/static/js/main.4c5d06e6.chunk.js.map",
+    "runtime-main.js": "/elychr.github.io/static/js/runtime-main.668f0282.js",
+    "runtime-main.js.map": "/elychr.github.io/static/js/runtime-main.668f0282.js.map",
+    "static/js/2.23cd05c7.chunk.js": "/elychr.github.io/static/js/2.23cd05c7.chunk.js",
+    "static/js/2.23cd05c7.chunk.js.map": "/elychr.github.io/static/js/2.23cd05c7.chunk.js.map",
+    "index.html": "/elychr.github.io/index.html",
+    "static/css/main.de5701c2.chunk.css.map": "/elychr.github.io/static/css/main.de5701c2.chunk.css.map",
+    "static/js/2.23cd05c7.chunk.js.LICENSE.txt": "/elychr.github.io/static/js/2.23cd05c7.chunk.js.LICENSE.txt",
+    "static/media/random.md": "/elychr.github.io/static/media/random.c0621414.md",
+    "static/media/zerossl.md": "/elychr.github.io/static/media/zerossl.1f20d59d.md"
   },
   "entrypoints": [
-    "static/js/runtime-main.9b0d6c87.js",
-    "static/js/2.efd57410.chunk.js",
+    "static/js/runtime-main.668f0282.js",
+    "static/js/2.23cd05c7.chunk.js",
     "static/css/main.de5701c2.chunk.css",
-    "static/js/main.8b0f8503.chunk.js"
+    "static/js/main.4c5d06e6.chunk.js"
   ]
 }

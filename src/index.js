@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { createMuiTheme, ThemeProvider } from '@material-ui/core'
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 import * as serviceWorker from './components/serviceWorker'
 import Sidebar from './components/sidebar'
