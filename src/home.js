@@ -21,8 +21,8 @@ export default function Home() {
                         <SimpleCard
                             site={e?.site}
                             buttons={[
-                                { label: 'API', icon: <Cloud style={{ color: lightBlue[500]}} />, onClick: () => window.open(e?.API, '_noRef') },
-                                { label: 'WEBSITE', icon: <Web style={{ color: lightBlue[500]}} />, onClick: () => window.open(e?.WEB, '_noRef') }
+                                { label: 'API', icon: <Cloud style={{ color: lightBlue[500]}} />, onClick: () => window.open(e?.API,'_blank', 'noopener,resizable,scrollbars') },
+                                { label: 'WEBSITE', icon: <Web style={{ color: lightBlue[500]}} />, onClick: () => window.open(e?.WEB,'_blank', 'noopener,resizable,scrollbars') }
                             ]}
                         />
                     )}
