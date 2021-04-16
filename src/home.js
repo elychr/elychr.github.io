@@ -3,10 +3,14 @@ import { lightBlue } from '@material-ui/core/colors';
 import { Cloud, Web } from '@material-ui/icons';
 import SimpleCard from './components/card';
 import { FlexGrid } from './components/flexgrid';
+import { Helmet } from "react-helmet";
 
 export default function Home() {
     return (
         <div style={{ flex: 1, display: 'flex' }} >
+            <Helmet encodeSpecialCharacters titleTemplate="%s | Elyas Christiansen">
+                <title>{'Home'}</title>
+            </Helmet>
             <div className='content' style={{ flex: 1 }}>
 
                 <FlexGrid
@@ -21,8 +25,8 @@ export default function Home() {
                         <SimpleCard
                             site={e?.site}
                             buttons={[
-                                { label: 'API', icon: <Cloud style={{ color: lightBlue[500]}} />, onClick: () => window.open(e?.API,'_blank', 'noopener,resizable,scrollbars') },
-                                { label: 'WEBSITE', icon: <Web style={{ color: lightBlue[500]}} />, onClick: () => window.open(e?.WEB,'_blank', 'noopener,resizable,scrollbars') }
+                                { label: 'API', icon: <Cloud style={{ color: lightBlue[500] }} />, onClick: () => window.open(e?.API, '_blank', 'noopener,resizable,scrollbars') },
+                                { label: 'WEBSITE', icon: <Web style={{ color: lightBlue[500] }} />, onClick: () => window.open(e?.WEB, '_blank', 'noopener,resizable,scrollbars') }
                             ]}
                         />
                     )}
