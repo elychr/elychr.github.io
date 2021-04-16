@@ -96,7 +96,7 @@ export default function NavigationSidebar({ routes = [], children }) {
             </Route>
 
             <div className='container'>
-                <nav className={`navigation ${classes.lists}`} style={{flex: 0.5, maxWidth: '30%'}} aria-label="mailbox folders">
+                <nav className={`navigation ${classes.lists}`} style={{ flex: 0.5 }} aria-label="mailbox folders">
                     <List>{routes.map((e, i) => {
                         return (
                             <ListItemLink

@@ -12,6 +12,12 @@
   display: flex;
 }
 
+.navigation{
+  margin-left: 2%;
+    margin-right: 2%;
+    width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     flex: 1;
@@ -20,10 +26,7 @@
   }
 
   .navigation{
-    min-width: 25rem;
-    max-width: 100rem;
-    margin-left: 2%;
-    margin-right: 2%;
+    max-width: 30%;    
   }
 }
 
