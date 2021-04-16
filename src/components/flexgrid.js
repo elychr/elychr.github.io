@@ -32,6 +32,7 @@ export const FlexGrid = ({ renderItem, data, cols = 3, noResize }) => {
     useEffect(() => {
         window.addEventListener('resize', debouncedHandleResize)
         return _ => window.removeEventListener('resize', debouncedHandleResize)
+        // eslint-disable-next-line 
     }, [])
 
 
