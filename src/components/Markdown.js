@@ -18,7 +18,7 @@ function Markdown({ route }) {
 
     return (
         <>
-            <Helmet encodeSpecialCharacters titleTemplate="%s | Core Building Protection">
+            <Helmet encodeSpecialCharacters titleTemplate="%s | Elyas Christiansen">
                 <title>{label ?? 'Welcome'}</title>
             </Helmet>
             <ReactMarkdown className='content'>{mdText}</ReactMarkdown>
