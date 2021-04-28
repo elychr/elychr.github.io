@@ -5,6 +5,10 @@ import SimpleCard from './components/card';
 import { FlexGrid } from './components/flexgrid';
 import { Helmet } from "react-helmet";
 
+function Spotify({link}){
+    return <iframe src={link} width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+}
+
 export default function Home() {
     return (
         <div style={{ flex: 1, display: 'flex' }} >
@@ -12,7 +16,10 @@ export default function Home() {
                 <title>{'Home'}</title>
             </Helmet>
             <div className='content' style={{ flex: 1 }}>
-
+                <div style={{ flex: 1, flexDirection: 'row' }}>
+                    <Spotify link='https://open.spotify.com/embed/playlist/5pQAHeeBKO5dvEXe2eHX3t' />
+                    <Spotify link='https://open.spotify.com/embed/playlist/3LZa024XGnTtORToEm7ENU' />
+                </div>
                 <FlexGrid
                     data={[
                         { site: 'Core Building Protection', API: 'https://api.corebp.co.nz/admin', WEB: 'https://corebp.co.nz/' },
@@ -25,8 +32,8 @@ export default function Home() {
                         <SimpleCard
                             site={e?.site}
                             buttons={[
-                                { label: 'API', icon: <Cloud style={{ color: lightBlue[500] }} />, onClick: () => window.open(e?.API, '_blank', 'noopener,resizable,scrollbars') },
-                                { label: 'WEBSITE', icon: <Web style={{ color: lightBlue[500] }} />, onClick: () => window.open(e?.WEB, '_blank', 'noopener,resizable,scrollbars') }
+                                { label: 'API', icon: <Cloud style={{ color: lightBlue[500] }} />, onClick: () => window.open(e?.API, '_blank', 'noopener,noreferrer') },
+                                { label: 'WEBSITE', icon: <Web style={{ color: lightBlue[500] }} />, onClick: () => window.open(e?.WEB, '_blank', 'noopener,noreferrer') }
                             ]}
                         />
                     )}
