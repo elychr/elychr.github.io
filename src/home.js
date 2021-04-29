@@ -5,8 +5,8 @@ import SimpleCard from './components/card';
 import { FlexGrid } from './components/flexgrid';
 import { Helmet } from "react-helmet";
 
-function Spotify({link}){
-    return <iframe src={link} width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+function Spotify({title, link}){
+    return <iframe title={title} src={link} width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 }
 
 export default function Home() {
@@ -17,8 +17,8 @@ export default function Home() {
             </Helmet>
             <div className='content' style={{ flex: 1 }}>
                 <div style={{ flex: 1, flexDirection: 'row' }}>
-                    <Spotify link='https://open.spotify.com/embed/playlist/5pQAHeeBKO5dvEXe2eHX3t' />
-                    <Spotify link='https://open.spotify.com/embed/playlist/3LZa024XGnTtORToEm7ENU' />
+                    <Spotify title='Bumpin' link='https://open.spotify.com/embed/playlist/5pQAHeeBKO5dvEXe2eHX3t' />
+                    <Spotify title='Bangin' link='https://open.spotify.com/embed/playlist/3LZa024XGnTtORToEm7ENU' />
                 </div>
                 <FlexGrid
                     data={[
